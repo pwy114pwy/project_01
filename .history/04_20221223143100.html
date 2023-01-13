@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
+            grid-template-areas: "a,b,c"
+                                "d,e,f"
+                                "g,h,i"
+            ;
+        }
+        /* .item{
+            background-color: aquamarine;
+            通过数字线的方式
+            /* grid-row-start: 2 ;
+            grid-row-end: 3 ;
+            grid-column-start: 2 ;
+            grid-column-end: 3 ; */
+        } */
+        .item{
+            background-color: aquamarine;
+            /* 通过数字线的方式 */
+            grid-row-start: e-start ;
+            grid-row-end: e-end ;
+            grid-column-start: e-start ;
+            grid-column-end: e-end ;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="item"></div>
+   </div> 
+</body>
+</html>
